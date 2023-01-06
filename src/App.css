@@ -8,9 +8,34 @@
 
 html {
   background-color: rgb(17, 24, 39);
+  color: white;
 }
 
 .app {
   min-height: 100vh;
-  margin: 0px 50px;
+  padding: 0 10rem;
+}
+
+#header-nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 0;
+  margin-bottom: 3.5rem;
+}
+#site-nav{
+  display: flex;
+}
+#first-impression{
+  text-align: center;
+}
+
+h1{
+  color:rgb(45,252,191);
+  padding: 0.5rem 0;
+}
+
+#link-other-website{
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
 }
