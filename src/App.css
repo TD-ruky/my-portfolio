@@ -39,3 +39,10 @@ h1{
   gap: 4rem;
   justify-content: center;
 }
+
+.skills-grid{
+  display:grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+}

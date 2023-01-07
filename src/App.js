@@ -1,6 +1,7 @@
 import './app.css'
 import linkedin from './medias/linkedin.svg'
 import github from './medias/github.svg'
+import Skills from './components/Skills.js';
 function App() {
 	return (
 		<div className="app">
@@ -29,7 +30,12 @@ function App() {
 					</div>
 				</div>
 			</header>
-			<section>Compétences principales : </section>
+			<section className='skills-grid'>
+				<Skills cardTitle={"tittre"}/>
+				<Skills cardTitle={"tittre"}/>
+				<Skills cardTitle={"tittre"}/>
+				<Skills cardTitle={"tittre"}/>
+			</section>
 			<section>Technologies vues</section>
 			<section>Les projets</section>
 		</div>
