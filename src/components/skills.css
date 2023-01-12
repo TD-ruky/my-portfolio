@@ -1,9 +1,14 @@
 .card-skill{
-    
+    text-align: center;
+    background-color: rgb(36, 139, 67);
+    padding: 3rem;
+    border-radius: 30px;
 }
 .card-logo{
-    text-align: center;
 }
 .card-title{
-    text-align: center;
+    margin: 2rem;
+}
+p{
+    line-height:30px ;
 }

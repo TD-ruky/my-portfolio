@@ -9,6 +9,7 @@
 html {
   background-color: rgb(17, 24, 39);
   color: white;
+  font-family: Poppins, sans-serif;
 }
 
 .app {
@@ -29,20 +30,51 @@ html {
   text-align: center;
 }
 
-h1{
-  color:rgb(45,252,191);
+#first-impression > h1{
+  color:rgb(36, 139, 67);
+  font-size: 3.5rem;
   padding: 0.5rem 0;
+  font-weight: 400;
+}
+#first-impression > h2{
+  font-size: 2rem;
+  padding: 2rem 0;
+  font-weight: 200;
+}
+#first-impression > p{
+  font-size: 1.25rem;
+  max-width: 50rem;
+  margin:20px auto;
+  line-height: 2rem;
 }
 
 #link-other-website{
   display: flex;
   gap: 4rem;
   justify-content: center;
+  padding: 2rem;
 }
 
+.avatar{
+  height: 400px;
+  margin: 2rem 0 5rem;
+}
 .skills-grid{
   display:grid;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media(max-width:600px){
+  .app{
+    padding: 0;
+  }
+  .skills-grid{
+    display:grid;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-columns: 1fr;
+    margin: 2%;
+  }
 }
