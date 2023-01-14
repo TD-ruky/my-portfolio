@@ -1,9 +1,11 @@
 import './app.css'
 import linkedin from './medias/linkedin.svg'
 import github from './medias/github.svg'
-import Skills from './components/Skills.js';
-import Design from './medias/design.webp'
-import Avatar from './medias/avatar.webp'
+import design from './medias/design.webp'
+import avatar from './medias/avatar.webp'
+
+import Skill from './components/skills/Skill.js'
+import Project from './components/projects/Project.js'
 function App() {
 	return (
 		<div className="app">
@@ -28,17 +30,22 @@ function App() {
 						<li><img src={github} /></li>
 					</ul>
 					<div>
-						<img className='avatar' src={Avatar}></img>
+						<img className='avatar' src={avatar}></img>
 					</div>
 				</div>
 			</header>
 			<section className='skills-grid'>
-				<Skills cardTitle={"tittre"} icone={Design}/>
-				<Skills cardTitle={"tittre"} icone={Design}/>
-				<Skills cardTitle={"tittre"} icone={Design}/>
+				<Skill cardTitle={"tittre"} icone={design} />
+				<Skill cardTitle={"tittre"} icone={design} />
+				<Skill cardTitle={"tittre"} icone={design} />
 			</section>
-			<section>Technologies vues</section>
-			<section>Les projets</section>
+			<section>
+				<h3 className='project-section-title'>Projets</h3>
+				<div className='projects-grid'>
+					<Project />
+					<Project />
+				</div>
+			</section>
 		</div>
 	);
 }
