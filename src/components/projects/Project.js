@@ -7,8 +7,14 @@ export default function project() {
   return (
     <div className='card-project'>
       <img src={capture} className='project-cover'></img>
-      <h3 className='project-title'>ffff</h3>
-      <p>Lorem ipsum dolor sit amet. Ut quis dolores et nihil amet qui atque veritatis aut nihil maiores eos quidem voluptatem et temporibus minus qui incidunt illo? Ut vitae quam et reprehenderit quaerat quo asperiores iure et sequi fugit ea tempore assumenda et quaerat </p>
+      <div className='project-hover'>
+        <h3 className='project-title'>Avatar</h3>
+
+        <p>Loremui fugit ea tempore assumenda et quaerat </p>
+        <button>Voir le code</button>
+        <br/>
+        <button>Voir la démo</button>
+      </div>
     </div>
   )
 }

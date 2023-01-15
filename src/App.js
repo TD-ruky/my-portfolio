@@ -44,6 +44,9 @@ function App() {
 				<div className='projects-grid'>
 					<Project />
 					<Project />
+					<Project />
+					<Project />
+					<Project />
 				</div>
 			</section>
 		</div>
