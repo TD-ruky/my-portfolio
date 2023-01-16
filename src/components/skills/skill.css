@@ -5,6 +5,7 @@
     border-radius: 30px;
 }
 .card-logo{
+    height: 128px;
 }
 .card-title{
     margin: 2rem;

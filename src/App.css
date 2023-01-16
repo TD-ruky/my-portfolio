@@ -83,4 +83,7 @@ html {
   .app{
     padding: 0;
   }
+  #header-nav{
+    padding: 1rem;
+  }
 }

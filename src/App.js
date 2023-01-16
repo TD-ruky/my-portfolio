@@ -1,9 +1,12 @@
 import './app.css'
 import linkedin from './medias/linkedin.svg'
 import github from './medias/github.svg'
-import design from './medias/design.webp'
+import algorithm from './medias/algorithm.png'
+import ladybug from './medias/ladybug.png'
+import design from './medias/design.png'
 import avatar from './medias/avatar.webp'
-
+import logo from './medias/logo.png'
+import Content from './content/content.json'
 import Skill from './components/skills/Skill.js'
 import Project from './components/projects/Project.js'
 function App() {
@@ -11,7 +14,7 @@ function App() {
 		<div className="app">
 			<header className="app-header">
 				<nav id='header-nav'>
-					<a>TD-Ruky</a>
+					<img src={logo}></img>
 					<ul id='site-nav'>
 						<li>lien1</li>
 						<li>lien2</li>
@@ -35,9 +38,9 @@ function App() {
 				</div>
 			</header>
 			<section className='skills-grid'>
-				<Skill cardTitle={"tittre"} icone={design} />
-				<Skill cardTitle={"tittre"} icone={design} />
-				<Skill cardTitle={"tittre"} icone={design} />
+				<Skill cardTitle={Content.skill[0].title} cardContent={Content.skill[0].content} icone={algorithm} />
+				<Skill cardTitle={Content.skill[1].title} cardContent={Content.skill[1].content} icone={design} />
+				<Skill cardTitle={Content.skill[2].title} cardContent={Content.skill[2].content} icone={ladybug} />
 			</section>
 			<section>
 				<h3 className='project-section-title'>Projets</h3>
