@@ -1,0 +1,46 @@
+
+  #first-impression{
+    text-align: center;
+  }
+  
+  #first-impression > h1{
+    color:rgb(36, 139, 67);
+    font-size: 3.5rem;
+    padding: 0.5rem 0;
+    font-weight: 400;
+  }
+  #first-impression > h2{
+    font-size: 2rem;
+    padding: 2rem 0;
+    font-weight: 200;
+  }
+  #first-impression > p{
+    font-size: 1.25rem;
+    max-width: 50rem;
+    margin:20px auto;
+    line-height: 2rem;
+  }
+  
+  #link-other-website{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    padding: 2rem;
+  }
+  #site-nav>li{
+    cursor: pointer;
+  }
+  .avatar{
+    height: 400px;
+    margin: 2rem 0 5rem;
+    clip-path: circle(45%);
+  }
+
+  @media(max-width:600px){
+    #first-impression>p{
+        padding: 10px;
+    }
+    .avatar{
+        height: 300px;
+      }
+  }

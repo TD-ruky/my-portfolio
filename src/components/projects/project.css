@@ -1,8 +1,9 @@
 .card-project{
     text-align: center;
-    background-color: rgb(22, 102, 136);
+    background-color: rgb(41, 161, 185);
     border-radius: 30px;
     position: relative;
+    border: solid grey 2px;
 }
 .project-cover{
     height: 100%;
@@ -30,10 +31,20 @@
     opacity: 0.1;
 }
 
-button{
+.project-hover>button{
     padding: 12px;
     border-radius: 20px;
     border: none;
-    background-color: red;
+    color: white;
+    background-color: rgb(22, 102, 136);
     margin-top: 10px;
 }
+
+@media(max-width:600px){
+    .card-project{
+        border-radius: 0px;
+    }
+    .project-cover{
+        border-radius: 0px;
+    }
+  }

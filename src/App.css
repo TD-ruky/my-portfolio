@@ -17,48 +17,14 @@ html {
   padding: 0 10rem;
 }
 
-#header-nav{
-  display: flex;
-  justify-content: space-between;
-  padding: 2.5rem 0;
-  margin-bottom: 3.5rem;
+#skill-paragraph{
+  margin-bottom: 2rem;
 }
-#site-nav{
-  display: flex;
-}
-#first-impression{
-  text-align: center;
+#skill-paragraph>a{
+  text-decoration: none;
+  color: rgb(22, 102, 136);
 }
 
-#first-impression > h1{
-  color:rgb(36, 139, 67);
-  font-size: 3.5rem;
-  padding: 0.5rem 0;
-  font-weight: 400;
-}
-#first-impression > h2{
-  font-size: 2rem;
-  padding: 2rem 0;
-  font-weight: 200;
-}
-#first-impression > p{
-  font-size: 1.25rem;
-  max-width: 50rem;
-  margin:20px auto;
-  line-height: 2rem;
-}
-
-#link-other-website{
-  display: flex;
-  gap: 4rem;
-  justify-content: center;
-  padding: 2rem;
-}
-
-.avatar{
-  height: 400px;
-  margin: 2rem 0 5rem;
-}
 .skills-grid{
   display:grid;
   grid-column-gap: 30px;

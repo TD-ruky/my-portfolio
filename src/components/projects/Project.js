@@ -1,6 +1,6 @@
 import React from 'react'
 import './project.css'
-import capture from '../../medias/Capture.PNG'
+import capture from '../../medias/projet-portfolio.PNG'
 
 
 export default function project() {
