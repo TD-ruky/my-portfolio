@@ -5,20 +5,20 @@ export default function Skills(props) {
 const [bugActivated, setBugActivated] = useState(false)
 
   const handleChangeBugActivated=()=>{
-    setBugActivated(true)
+    if (props.skill.bug === true) setBugActivated(true)
   }
   useEffect(()=>{
     if (bugActivated === true){
 
     }
   },[bugActivated])
-
+console.log(props.skill)
   return (
     <div className='card-skill'>
-      <img onClick={handleChangeBugActivated} src={props.icone} className={'card-logo '+ (bugActivated?' lady-move':null)}></img>
+      <img onClick={handleChangeBugActivated} src={props.icon} className={'card-logo '+ (bugActivated?' lady-move':null)}></img>
       
-      <h3 className='card-title'>{props.cardTitle}</h3>
-      <p>Lorem ipsum dolor sit amet. Ut quis dolores et nihil amet qui atque veritatis aut nihil maiores eos quidem voluptatem et temporibus minus qui incidunt illo? Ut vitae quam et reprehenderit quaerat quo asperiores iure et sequi fugit ea tempore assumenda et quaerat </p>
+      <h3 className='card-title'>{props.skill.title}</h3>
+      <p>{props.skill.content}</p>
     </div>
   )
 }

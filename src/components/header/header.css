@@ -4,14 +4,14 @@
     margin-bottom: 3.5rem;
     position: sticky;
     z-index: 2;
-    top: 0;
+    top: -5px;
     background-color: rgb(17, 24, 39);
   }
   #header-nav>nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 20px;
+    padding: 0px 10px 20px;
   }
 
   #logo{

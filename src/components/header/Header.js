@@ -11,8 +11,8 @@ export default function Header(props) {
             <nav>
                 <img id='logo' src={logo}></img>
                 <ul id='site-nav'>
-                    <li onClick={() => props.handleClick(props.skillsRef)}>Compétences</li>
-                    <li onClick={() => props.handleClick(props.projectsRef)}>Projets</li>
+                    <li onClick={() => props.scrollPage(props.skillsRef)}>Compétences</li>
+                    <li onClick={() => props.scrollPage(props.projectsRef)}>Projets</li>
                 </ul>
             </nav>
             <hr/>

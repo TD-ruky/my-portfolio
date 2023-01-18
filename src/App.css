@@ -31,10 +31,11 @@ html {
   grid-row-gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
 }
-.project-section-title{
+.section-title{
   margin: 8rem 0 6rem;
   text-align: center;
   font-size: 2.5rem;
+  scroll-margin-top: 200px;
 
 }
 .projects-grid{
