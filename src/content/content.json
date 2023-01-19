@@ -8,13 +8,13 @@
         },
         {
             "title" : "Design",
-            "content" : "greoetjbet hbir hborjvujermh uvroiubrobh rvmbh",
+            "content" : "N'étant pas designer de profession, j'ai tout de même acquis des connaissances concernant l'UI et surtout l'UX à force de m'y intéresser. J'ai ainsi de quoi proposer des idées ou en enrichir en critiquant de manière constructive",
             "bug" : false,
             "img" : "./medias/ladybug.png"
         },
         {
             "title" : "Bug Finder",
-            "content" : "greoetjbet hbir hborjvujermh uvroiubrobh rvmbh",
+            "content" : "J'aime naviguer sur les flots d'internet et voir ce qu'il s'y passe. On apprend beaucoup, mais l'on affine également son œil. J'aime repérer bugs et problèmes de conception et tenter de les régler.  En espérant qu'aucun bug ne soit délogé sur ce site..",
             "bug" : true,
             "img" : "./medias/design.png"
         }
