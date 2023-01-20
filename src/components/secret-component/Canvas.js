@@ -4,31 +4,29 @@ import './canvas.css'
 export default function Canvas() {
     const canvasRef = useRef(null)
     const contextRef = useRef(null)
-    const [scale] = useState(2)
+    const [scale] = useState(0.7)
 
     useEffect(() =>{
         const canvas = canvasRef.current;
         const context = canvas.getContext("2d");
-        canvas.width = window.innerWidth/1.5;
-        canvas.height = window.innerHeight/1.5;
+        canvas.width = window.innerWidth/1.2;
+        canvas.height = window.innerHeight/1.2;
         
         
         //canvas settings
-        context.fillStyle = "green";
-        context.strokeStyle='yellow'
         contextRef.current = context
 
 
 
         //effect settings
-        let size = 100
-        const maxLevel = 8
+        let size = 150
+        const maxLevel = 7
         const branches = 2
     
-        let sides = 5
-        let spread = 0.6
+        let sides = 6
+        let spread = 0.8
         let color = 'hsl(' + Math.random() * 360 + ', 100%, 50%'
-        let lineWidth = Math.floor(Math.random() * 20 + 10)
+        let lineWidth = Math.floor(Math.random() * 10 +1)
         
         const drawBranch=(level)=>{
             if(level > maxLevel) return;
@@ -52,7 +50,6 @@ export default function Canvas() {
             contextRef.current.arc(0, size, size *0.1, 0, Math.PI * 2)
             contextRef.current.fill()
         }
-        drawBranch(2)
          const drawFractal=()=>{
              contextRef.current.clearRect(0,0,canvas.width, canvas.height)
              contextRef.current.save()

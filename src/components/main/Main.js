@@ -10,7 +10,7 @@ export default function Main() {
             <div id='first-impression'>
                 <h1>Derivaux Thomas</h1>
                 <h2>Developpeur Front-End</h2>
-                <p>Développeur principalement React, j'aime la création de designs innovants, découvrir de nouveaux outils,
+                <p>Développeur principalement React, j'aime implémenter des designs innovants, découvrir de nouveaux outils,
                     et surtout travailler en équipe. Vous pouvez me retrouver ici :
                 </p>
                 <ul id='link-other-website'>

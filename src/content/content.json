@@ -2,7 +2,7 @@
     "skills":[
         {
             "title" : "Algorithmie",
-            "content" : "greoetjbet hbir hborjvujermh uvroiubrobh rvmbh",
+            "content" : "Trouver une grosse problématique, la diviser en petites problématiques et les résoudre. Ne pas être satisfait et optimiser la complexité temporelle et spatiale tout en essayant de rendre le code maintenable. C'est sûrement ce que je préfère d'un point de vue technique dans le développement.",
             "bug" : false,
             "img": "./medias/algorithm.png"
         },

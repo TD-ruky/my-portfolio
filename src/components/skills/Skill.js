@@ -12,7 +12,6 @@ const [bugActivated, setBugActivated] = useState(false)
 
     }
   },[bugActivated])
-console.log(props.skill)
   return (
     <div className='card-skill'>
       <img onClick={handleChangeBugActivated} src={props.icon} className={'card-logo '+ (bugActivated?' lady-move':null)}></img>
