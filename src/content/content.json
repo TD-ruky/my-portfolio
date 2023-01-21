@@ -22,14 +22,14 @@
     "projects":[
         {
             "title" : "Portfolio",
-            "description" : "projet 1",
+            "description" : "Création de la v1 de mon portfolio en React. Le nombre de librairies et imports a été réduit le plus possible.",
             "lienCode" : "https://github.com/TD-ruky/my-portfolio",
             "lienDemo" : null,
             "img" : null
         },
         {
             "title" : "Fractales Canvas",
-            "description" : "projet 2",
+            "description" : "Générateur de fractales en utilisant le rendu dynamique des éléments Canvas. Le tout supervisé en React",
             "lienCode" : null,
             "lienDemo" : null,
             "img" : null

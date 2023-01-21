@@ -16,7 +16,7 @@ function App() {
 	const skillsRef = useRef(null);
 	const projectsRef = useRef(null);
 
-	const changeToCanvas=()=>{
+	const toggleHomeCanvas=()=>{
 		setIsCanvas(!isCanvas)
 	}
 
@@ -27,7 +27,7 @@ function App() {
 	return (
 		isCanvas?
 		
-		<CanvasPage/>:
+		<CanvasPage toggleHomeCanvas={toggleHomeCanvas} isCanvas={isCanvas} />:
 		<div className="app">
 			<Header scrollPage={scrollPage} skillsRef={skillsRef} projectsRef={projectsRef} />
 			<Main/>
@@ -43,7 +43,7 @@ function App() {
 				<h3 className='section-title' ref={projectsRef}>Projets</h3>
 				<div className='projects-grid'>
 					<Project project={Content.projects[0]} background={portfolioImg}/>
-					<Project project={Content.projects[1]} background={fractaleImg} changeToCanvas={changeToCanvas} fractale={true} />
+					<Project project={Content.projects[1]} background={fractaleImg} toggleHomeCanvas={toggleHomeCanvas} fractale={true} />
 				</div>
 			</section>
 		</div>

@@ -39,11 +39,14 @@
     margin-top: 10px;
 }
 
-@media(max-width:600px){
+@media(max-width:750px){
     .card-project{
         border-radius: 0px;
     }
     .project-cover{
         border-radius: 0px;
+    }
+    .project-hover>p{
+        line-height: 100%;
     }
   }

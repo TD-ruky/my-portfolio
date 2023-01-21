@@ -45,7 +45,7 @@ p{
     }
 }
 
-@media(max-width:600px){
+@media(max-width:750px){
     .card-skill{
         border-radius: 0px;
     }

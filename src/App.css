@@ -42,15 +42,18 @@ html {
   display:grid;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   margin-bottom: 300px;
 }
 
-@media(max-width:600px){
+@media(max-width:750px){
   .app{
-    padding: 0;
+    padding: 10px;
   }
   #header-nav{
     padding: 1rem;
+  }
+  .projects-grid{
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
 }

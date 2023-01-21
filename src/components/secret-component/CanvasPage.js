@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Canvas from './Canvas'
+import './canvas-page.css'
 
-export default function CanvasPage() {
+export default function CanvasPage({toggleHomeCanvas, isCanvas}) {
+    useEffect(()=>{
+        
+    },[isCanvas])
     return (
-        <div>
+        <div className='anim'>
             <header>
-                <button>Retour</button>
+                <button onClick={toggleHomeCanvas}>Retour</button>
             </header>
-            <div style={{display:'flex', justifyContent:'center'}}>
+            <div style={{display:'flex', alignItems:'center', flexDirection:'column'}}>
                 <Canvas/>
             </div>
             

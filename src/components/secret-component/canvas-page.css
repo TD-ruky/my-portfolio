@@ -1,0 +1,11 @@
+.anim{
+    animation: appear 2s;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
