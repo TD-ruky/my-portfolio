@@ -1,6 +1,6 @@
 .card-skill{
     text-align: center;
-    background-color: rgb(22, 102, 136);
+    background-color: var(--background-component);
     padding: 3rem;
     border-radius: 30px;
 }
@@ -10,13 +10,24 @@
 .card-title{
     margin: 2rem;
 }
-p{
-    line-height:30px ;
-}
+
 .lady-move{
     animation: 9s linear forwards ladybug-moving;
     position: sticky;
     top: 0;
+}
+.visible{
+    animation: 1s forwards poping;
+}
+@keyframes poping {
+    from {
+        transform: translate(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0px);
+        opacity: 1;
+    }
 }
 
 @keyframes ladybug-moving {
@@ -48,8 +59,5 @@ p{
 @media(max-width:750px){
     .card-skill{
         border-radius: 0px;
-    }
-    .card-title{
-        margin: 0;
     }
   }

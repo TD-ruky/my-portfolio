@@ -1,0 +1,25 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+html {
+  background-color: var(--background-website);
+  color: white;
+  font-family: Poppins, sans-serif;
+}
+
+p{
+  text-align: start;
+  line-height:30px ;
+}
+
+:root {
+    --background-website: rgb(17, 24, 39);
+    --background-component: rgb(22, 102, 132);
+
+    --scroll-margin-top : 200px
+  }

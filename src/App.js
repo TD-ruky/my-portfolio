@@ -1,52 +1,54 @@
 import './app.css'
 
-import algorithm from './medias/algorithm.png'
-import ladybug from './medias/ladybug.png'
-import design from './medias/design.png'
-import portfolioImg from './medias/projet-portfolio.PNG'
-import fractaleImg from './medias/fractale.png'
-import Content from './content/content.json'
 
-import {Skill,Project,Header,Main,CanvasPage} from './components/call.js'
-import {useRef, useState} from 'react'
+
+import { Skill, Project, Header, Main, Footer, CanvasPage, algorithm, ladybug, design, portfolioImg, fractaleImg, Content} from './imports.js'
+import { useRef, useState } from 'react'
 
 function App() {
+	//switch to fractal
 	const [isCanvas, setIsCanvas] = useState(false)
 
+	const startRef = useRef(null)
 	const skillsRef = useRef(null);
 	const projectsRef = useRef(null);
 
-	const toggleHomeCanvas=()=>{
+	const toggleHomeCanvas = () => {
 		setIsCanvas(!isCanvas)
 	}
 
 	const scrollPage = (ref) => {
-		ref.current.scrollIntoView({behavior: 'smooth'});
-	  }
+		ref.current.scrollIntoView({ behavior: 'smooth' });
+	}
 
 	return (
-		isCanvas?
-		
-		<CanvasPage toggleHomeCanvas={toggleHomeCanvas} isCanvas={isCanvas} />:
-		<div className="app">
-			<Header scrollPage={scrollPage} skillsRef={skillsRef} projectsRef={projectsRef} />
-			<Main/>
-			<h3 className='section-title' ref={skillsRef}>Compétences</h3>
-			<p id='skill-paragraph'>En plus des outils que j'utilise et que vous pouvez retrouver sur mon <a href="https://github.com/TD-ruky">github</a>, voici quelques informations me concernant :</p>
-			<section className='skills-grid'>
-				<Skill skill={Content.skills[0]} icon={algorithm}/>
-				<Skill skill={Content.skills[1]} icon={design}/>
-				<Skill skill={Content.skills[2]} icon={ladybug}/>
-			
-			</section>
-			<section>
-				<h3 className='section-title' ref={projectsRef}>Projets</h3>
-				<div className='projects-grid'>
-					<Project project={Content.projects[0]} background={portfolioImg}/>
-					<Project project={Content.projects[1]} background={fractaleImg} toggleHomeCanvas={toggleHomeCanvas} fractale={true} />
+		isCanvas ?
+			<CanvasPage toggleHomeCanvas={toggleHomeCanvas} isCanvas={isCanvas} /> 
+			:
+			<div>
+				<Header scrollPage={scrollPage} skillsRef={skillsRef} projectsRef={projectsRef} startRef={startRef} />
+				<div className="main-page" ref={startRef}>
+					<Main />
+					<section >
+						<h3 className='section-title' ref={skillsRef}>Compétences</h3>
+						<p id='skill-paragraph'>En plus des outils que j'utilise et que vous pouvez retrouver sur mon <a href="https://github.com/TD-ruky">github</a>, voici quelques informations me concernant :</p>
+						<div className='grid'>
+							<Skill skill={Content.skills[0]} icon={algorithm} />
+							<Skill skill={Content.skills[1]} icon={design} />
+							<Skill skill={Content.skills[2]} icon={ladybug} />
+						</div>
+
+					</section>
+					<section>
+						<h3 className='section-title' ref={projectsRef}>Projets</h3>
+						<div className='grid'>
+							<Project project={Content.projects[0]} background={portfolioImg} />
+							<Project project={Content.projects[1]} background={fractaleImg} toggleHomeCanvas={toggleHomeCanvas} fractale={true} />
+						</div>
+					</section>
+					<Footer/>
 				</div>
-			</section>
-		</div>
+			</div>
 	);
 }
 

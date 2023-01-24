@@ -1,31 +1,43 @@
 
   #first-impression{
     text-align: center;
+    margin-top: var(--scroll-margin-top)
   }
   
-  #first-impression > h1{
+  .container-h1 {
+    display: inline-block;
+  }
+
+  #first-impression h1{
     color:rgb(36, 139, 67);
     font-size: 3.5rem;
-    padding: 0.5rem 0;
     font-weight: 400;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: 
+      typing 3s steps(40, end),
+      blink-caret .75s step-end infinite;
   }
+
   #first-impression > h2{
-    font-size: 2rem;
     padding: 2rem 0;
+    font-size: 2rem;
     font-weight: 200;
   }
   #first-impression > p{
-    font-size: 1.25rem;
+    line-height: 2rem;
     max-width: 50rem;
     margin:20px auto;
-    line-height: 2rem;
+    font-size: 1.25rem;
   }
   
   #link-other-website{
     display: flex;
-    gap: 4rem;
     justify-content: center;
     padding: 2rem;
+    gap: 4rem;
   }
   #site-nav>li{
     cursor: pointer;
@@ -36,6 +48,15 @@
     clip-path: circle(45%);
   }
 
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  
   @media(max-width:600px){
     #first-impression>p{
         padding: 10px;
@@ -44,3 +65,10 @@
         height: 300px;
       }
   }
+
+  @media(max-width:450px) {
+    #first-impression h1{
+      white-space: normal;
+    }
+  }
+

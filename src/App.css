@@ -1,20 +1,10 @@
-*,
-::after,
-::before {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
 
-html {
-  background-color: rgb(17, 24, 39);
-  color: white;
-  font-family: Poppins, sans-serif;
-}
-
-.app {
+.main-page {
+  width: 90%;
   min-height: 100vh;
-  padding: 0 10rem;
+  max-width: 1700px;
+  margin: 0 auto ;
+  scroll-margin-top: var(--scroll-margin-top);
 }
 
 #skill-paragraph{
@@ -22,10 +12,10 @@ html {
 }
 #skill-paragraph>a{
   text-decoration: none;
-  color: rgb(22, 102, 136);
+  color: var(--background-component);
 }
 
-.skills-grid{
+.grid{
   display:grid;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
@@ -33,27 +23,16 @@ html {
 }
 .section-title{
   margin: 8rem 0 6rem;
-  text-align: center;
   font-size: 2.5rem;
-  scroll-margin-top: 200px;
-
-}
-.projects-grid{
-  display:grid;
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  margin-bottom: 300px;
+  text-align: center;
+  scroll-margin-top: var(--scroll-margin-top);
 }
 
 @media(max-width:750px){
-  .app{
+  .main-page{
     padding: 10px;
   }
   #header-nav{
     padding: 1rem;
-  }
-  .projects-grid{
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
 }

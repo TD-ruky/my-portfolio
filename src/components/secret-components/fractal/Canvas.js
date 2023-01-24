@@ -20,14 +20,16 @@ export default function Canvas() {
         let size
         if (window.innerWidth>700){
             canvas.width = window.innerWidth/1.2;
-            canvas.height = window.innerHeight/1.2;
+            canvas.height = window.innerHeight/1.4;
             size = 200
         }else if(window.innerWidth>350){
+            canvas.width = window.innerWidth/1.2;
+            canvas.height = window.innerHeight/1.8;
             size = 100
         }
         else{
             canvas.width = window.innerWidth/1.2;
-            canvas.height = window.innerWidth/1.2;
+            canvas.height = window.innerHeight/1.8;
             size = 75
         }
             
@@ -84,11 +86,11 @@ export default function Canvas() {
         <canvas className='canvas-container' ref={canvasRef}>
 
         </canvas>
-        <div>
+        <div className='range-container'>
+            <InputRange changeState={changeState} state='spread' defaultValue={states.spread} min={0.1} max={6.4} step={0.1}/> 
+            <InputRange changeState={changeState} state='sides' defaultValue={states.sides} min={1} max={20} step={1}/> 
             <InputRange changeState={changeState} state='scale' defaultValue={states.scale} min={0.1} max={1} step={0.1}/>
             <InputRange changeState={changeState} state='branches' defaultValue={states.branches} min={0} max={3} step={1}/>
-            <InputRange changeState={changeState} state='sides' defaultValue={states.sides} min={1} max={20} step={1}/> 
-            <InputRange changeState={changeState} state='spread' defaultValue={states.spread} min={0.1} max={6.4} step={0.1}/> 
         </div>
     </>
   )

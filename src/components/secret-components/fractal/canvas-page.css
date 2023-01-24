@@ -1,0 +1,47 @@
+.anim{
+    animation: appear 2s;
+}
+
+.arrow-left{
+    position: relative;
+    padding: 5px;
+    background: #000;
+    height: 50px;
+    width: 50px;
+    border-radius: 50% 0% 0% 50%;
+    margin: 40px;
+    transition: all 0.2s linear;
+}
+.arrow-left:hover {
+    transform: translate3d(-10px, 0 , 0);
+  }
+.arrow-left::before{
+        content: "";
+        position: absolute;
+        left: 20px;
+        z-index: 11;
+        display: block;
+        width: 25px;
+        height: 25px;
+        border-top: 2px solid #fff;
+        border-left: 2px solid #fff;
+        top: 16px;
+        transform: rotate(-45deg);
+}
+.arrow-left::after{
+    content: "Retour";
+    background: #000;
+    position: absolute;
+    top: 0;
+    left:30px;
+    padding: 21px;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

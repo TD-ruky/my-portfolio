@@ -1,0 +1,22 @@
+footer{
+    margin: 100px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.cog{
+    width: 40px;
+    animation: rotation 3s linear infinite;
+}
+@keyframes rotation {
+    to{
+        transform: rotate(360deg);
+    }
+}
+@media (max-width:440px){
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+}

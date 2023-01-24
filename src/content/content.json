@@ -4,13 +4,15 @@
             "title" : "Algorithmie",
             "content" : "Trouver une grosse problématique, la diviser en petites problématiques et les résoudre. Ne pas être satisfait et optimiser la complexité temporelle et spatiale tout en essayant de rendre le code maintenable. C'est sûrement ce que je préfère d'un point de vue technique dans le développement.",
             "bug" : false,
-            "img": "./medias/algorithm.png"
+            "img": "./medias/algorithm.png",
+            "alt": "algorithme faisant fonctionner une machine"
         },
         {
             "title" : "Design",
             "content" : "N'étant pas designer de profession, j'ai tout de même acquis des connaissances concernant l'UI et surtout l'UX à force de m'y intéresser. J'ai ainsi de quoi proposer des idées ou en enrichir en critiquant de manière constructive",
             "bug" : false,
-            "img" : "./medias/ladybug.png"
+            "img" : "./medias/ladybug.png",
+            "alt": "écran UX UI"
         },
         {
             "title" : "Bug Finder",
@@ -25,7 +27,8 @@
             "description" : "Création de la v1 de mon portfolio en React. Le nombre de librairies et imports a été réduit le plus possible.",
             "lienCode" : "https://github.com/TD-ruky/my-portfolio",
             "lienDemo" : null,
-            "img" : null
+            "img" : null,
+            "alt": "coccinelle"
         },
         {
             "title" : "Fractales Canvas",

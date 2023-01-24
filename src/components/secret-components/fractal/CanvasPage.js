@@ -9,7 +9,7 @@ export default function CanvasPage({toggleHomeCanvas, isCanvas}) {
     return (
         <div className='anim'>
             <header>
-                <button onClick={toggleHomeCanvas}>Retour</button>
+                <div className='arrow-left' onClick={toggleHomeCanvas} ></div>
             </header>
             <div style={{display:'flex', alignItems:'center', flexDirection:'column'}}>
                 <Canvas/>
