@@ -2,7 +2,7 @@ import './app.css'
 
 
 
-import { Skill, Project, Header, Main, Footer, CanvasPage, algorithm, ladybug, design, portfolioImg, fractaleImg, Content} from './imports.js'
+import { Skill, Project, Header, Main, Footer, CanvasPage, algorithm, ladybug, design, portfolioImg, tiktokPlays, fractaleImg, loginForm, Content} from './imports.js'
 import { useRef, useState } from 'react'
 
 function App() {
@@ -44,6 +44,8 @@ function App() {
 						<div className='grid'>
 							<Project project={Content.projects[0]} background={portfolioImg} />
 							<Project project={Content.projects[1]} background={fractaleImg} toggleHomeCanvas={toggleHomeCanvas} fractale={true} />
+							<Project project={Content.projects[2]} background={loginForm} fractale={false} />
+							<Project project={Content.projects[3]} background={tiktokPlays} fractale={false} />
 						</div>
 					</section>
 					<Footer/>

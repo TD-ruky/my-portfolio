@@ -10,7 +10,7 @@ const myRef = useRef(null)
 useEffect(()=>{
   const observer = new IntersectionObserver((entries)=>{
     const entry = entries[0]
-    entry.isIntersecting === true ? setIsVisible(true) : setIsVisible(false)
+    setIsVisible(entry.isIntersecting)
   })
   observer.observe(myRef.current)
 }, [])
@@ -19,11 +19,7 @@ useEffect(()=>{
   const handleChangeBugActivated=()=>{
     if (props.skill.bug === true) setBugActivated(true)
   }
-  useEffect(()=>{
-    if (bugActivated === true){
 
-    }
-  },[bugActivated])
   return (
     <div className={isVisible?'visible card-skill':'card-skill'} ref={myRef}>
       <img 

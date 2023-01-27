@@ -10,11 +10,13 @@ import algorithm from './medias/algorithm.png'
 import ladybug from './medias/ladybug.png'
 import design from './medias/design.png'
 import portfolioImg from './medias/projet-portfolio.PNG'
+import tiktokPlays from './medias/tiktok-plays.PNG'
 import fractaleImg from './medias/fractale.png'
+import loginForm from './medias/login-form.PNG'
 import cog from './medias/cog.svg'
 
 import Content from './content/content.json'
 
 export {
-    Skill,Project,Header,Main,Footer,Canvas,CanvasPage, algorithm, ladybug, design, portfolioImg, fractaleImg, Content, cog
+    Skill,Project,Header,Main,Footer,Canvas,CanvasPage, algorithm, ladybug, design, portfolioImg, fractaleImg, tiktokPlays, loginForm, Content, cog
 }

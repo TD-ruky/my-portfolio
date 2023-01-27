@@ -34,7 +34,7 @@ export default function Header(props) {
                     </ul>
                     
                     :
-                    <button onClick={toggleNavFunc} class="burger-icon">
+                    <button onClick={toggleNavFunc} className="burger-icon">
                             <span></span>
                             <span></span>
                             <span></span>
